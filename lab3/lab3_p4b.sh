@@ -11,10 +11,11 @@ fi
 
 echo
 echo "======================================================================"
-echo "1-gram model (WB smoothing; different size SWB corpus)"
+echo "3-gram model (WB smoothing; different size SWB corpus)"
 echo "======================================================================"
 echo
 
+order=3
 gzip -cd nbest/*.nbest.gz > all.nbest.orign
 
 # nbest_stat keep the nbest number for each utt
@@ -27,7 +28,7 @@ head all.nbest
 for d in 2000 20000 200000 232838 ; do
     # get lm score
     $binStr --vocab lab3.syms --train swb.$d.txt --test all.nbest \
-            --n 3 --sent_log_probs all.nbest.$d.lmprob
+            --n $order --sent_log_probs all.nbest.$d.lmprob
 
     # put am and lm score together
     paste all.nbest all.nbest.$d.lmprob > all.nbest.$d.prob
@@ -51,7 +52,7 @@ exit 1
 # You could try different lm weight
 echo
 echo "======================================================================"
-echo "1-gram model (WB smoothing; full SWB corpus; different LM weights)"
+echo "3-gram model (WB smoothing; full SWB corpus; different LM weights)"
 echo "======================================================================"
 echo
 
@@ -71,4 +72,4 @@ else
 fi
 
 
-
+# You could try different order
