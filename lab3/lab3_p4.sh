@@ -1,10 +1,8 @@
 #!/bin/bash -e
 # Can't find the p018p1.rescore.py, please use lab3.p4b.sh
 
-if [[ -e lab3_lm ]] ; then
-    binStr="lab3_lm"
-elif [[ -e Lab3Lm.class ]] ; then
-    binStr="java Lab3Lm"
+if [[ -e ./src/lab3_lm ]] ; then
+    binStr="./src/lab3_lm"
 else
     echo "Couldn't find program to execute."
     exit 1

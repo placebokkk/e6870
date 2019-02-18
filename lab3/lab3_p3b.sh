@@ -2,9 +2,7 @@
 
 
 if [[ -e ./src/lab3_lm ]] ; then
-    binStr="./lab3_lm"
-elif [[ -e Lab3Lm.class ]] ; then
-    binStr="java Lab3Lm"
+    binStr="./src/lab3_lm"
 else
     echo "Couldn't find program to execute."
     exit 1
