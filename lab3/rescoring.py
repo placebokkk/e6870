@@ -4,7 +4,7 @@ from itertools import accumulate
 def resocring_one_utt(candidates, lm_weight):
     best_score = -1000000
     for c in candidates:
-        utt, prob = c.strip().split('=')
+        utt, prob = c.strip().split("A=")
         am_prob, lm_prob = prob.strip().split('\t')
         score = float(am_prob) + lm_weight*float(lm_prob)
         if score > best_score:
