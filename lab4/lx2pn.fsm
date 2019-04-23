@@ -1,0 +1,12 @@
+1	2	BEARS(01)	|
+1	6	I(01)	|
+1	7	LIKE(01)	|
+2	3	<epsilon>	B
+3	4	<epsilon>	EH
+4	5	<epsilon>	R
+5	1	<epsilon>	Z
+6	1	<epsilon>	AY
+7	8	<epsilon>	L
+8	9	<epsilon>	AY
+9	1	<epsilon>	KD
+1

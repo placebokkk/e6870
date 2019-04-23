@@ -1,0 +1,7 @@
+# states: 4
+# input-voc: /dynamic/
+# output-voc: /dynamic/
+1	2	I	I(01)
+2	3	LIKE	LIKE(01)
+3	4	BEARS	BEARS(01)
+4

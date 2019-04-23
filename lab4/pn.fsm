@@ -1,0 +1,15 @@
+# states: 12
+# input-voc: /dynamic/
+# output-voc: /dynamic/
+1	2	I	|
+2	3	<epsilon>	AY
+3	4	LIKE	|
+4	5	<epsilon>	L
+5	6	<epsilon>	AY
+6	7	<epsilon>	KD
+7	8	BEARS	|
+8	9	<epsilon>	B
+9	10	<epsilon>	EH
+10	11	<epsilon>	R
+11	12	<epsilon>	Z
+12

@@ -1,0 +1,1201 @@
+questions: 111
+question voc size: 53
+fenemes/trees: 153
+min lexeme pos (phone): -1
+max lexeme pos (phone): 1
+min lexeme pos (lex): 0
+max lexeme pos (lex): 0
+min phone pos: -1
+max phone pos: 1
+lexeme questions: false
+leaves: 386
+
+Tree for feneme AA_1:
+node   0: leaf    0
+
+Tree for feneme AA_2:
+node   0: leaf    1
+
+Tree for feneme AA_3:
+node   0: quest-P  23[-1] --> true: node   1, false: node   2
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   1: leaf    2
+node   2: leaf    3
+
+Tree for feneme AE_1:
+node   0: quest-P  46[-1] --> true: node   1, false: node   2
+  quest: B D G K P T
+node   1: leaf    4
+node   2: leaf    5
+
+Tree for feneme AE_2:
+node   0: quest-P  40[-1] --> true: node   3, false: node   1
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: quest-P  43[+1] --> true: node   4, false: node   2
+  quest: M N NG
+node   2: quest-P  11[-1] --> true: node   5, false: node   6
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: leaf    6
+node   4: leaf    7
+node   5: leaf    8
+node   6: leaf    9
+
+Tree for feneme AE_3:
+node   0: quest-P  37[+1] --> true: node   3, false: node   1
+  quest: CH F HH S SH TH TS
+node   1: quest-P  40[+1] --> true: node   4, false: node   2
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   2: quest-P  57[+1] --> true: node   5, false: node   6
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   3: leaf   10
+node   4: leaf   11
+node   5: leaf   12
+node   6: leaf   13
+
+Tree for feneme AH_1:
+node   0: leaf   14
+
+Tree for feneme AH_2:
+node   0: quest-P  46[-1] --> true: node   1, false: node   2
+  quest: B D G K P T
+node   1: leaf   15
+node   2: leaf   16
+
+Tree for feneme AH_3:
+node   0: quest-P  89[+1] --> true: node   2, false: node   1
+  quest: N
+node   1: quest-P  17[+1] --> true: node   3, false: node   4
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   2: leaf   17
+node   3: leaf   18
+node   4: leaf   19
+
+Tree for feneme AO_1:
+node   0: quest-P  85[-1] --> true: node   2, false: node   1
+  quest: K
+node   1: quest-P  11[-1] --> true: node   3, false: node   4
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   2: leaf   20
+node   3: leaf   21
+node   4: leaf   22
+
+Tree for feneme AO_2:
+node   0: quest-P   6[+1] --> true: node   1, false: node   2
+  quest: AXR ER R
+node   1: quest-P  46[-1] --> true: node   3, false: node   4
+  quest: B D G K P T
+node   2: quest-P  11[-1] --> true: node   5, false: node   6
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: leaf   23
+node   4: leaf   24
+node   5: leaf   25
+node   6: leaf   26
+
+Tree for feneme AO_3:
+node   0: quest-P   6[+1] --> true: node   6, false: node   1
+  quest: AXR ER R
+node   1: quest-P  43[+1] --> true: node   2, false: node   3
+  quest: M N NG
+node   2: quest-P  85[-1] --> true: node   8, false: node   9
+  quest: K
+node   3: quest-P   7[+1] --> true: node   7, false: node   4
+  quest: AXR ER L R W
+node   4: quest-P  22[+1] --> true: node  10, false: node   5
+  quest: CH JH S SH TS Z ZH
+node   5: quest-P  13[+1] --> true: node  11, false: node  12
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   6: leaf   27
+node   7: leaf   28
+node   8: leaf   29
+node   9: leaf   30
+node  10: leaf   31
+node  11: leaf   32
+node  12: leaf   33
+
+Tree for feneme AW_1:
+node   0: leaf   34
+
+Tree for feneme AW_2:
+node   0: leaf   35
+
+Tree for feneme AW_3:
+node   0: quest-P  17[+1] --> true: node   1, false: node   2
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   1: leaf   36
+node   2: leaf   37
+
+Tree for feneme AX_1:
+node   0: quest-P  27[-1] --> true: node   5, false: node   1
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   1: quest-P  45[-1] --> true: node   6, false: node   2
+  quest: K P T
+node   2: quest-P  43[-1] --> true: node   7, false: node   3
+  quest: M N NG
+node   3: quest-P 110[-1] --> true: node   4, false: node   8
+  quest: |
+node   4: quest-P  89[+1] --> true: node   9, false: node  10
+  quest: N
+node   5: leaf   38
+node   6: leaf   39
+node   7: leaf   40
+node   8: leaf   41
+node   9: leaf   42
+node  10: leaf   43
+
+Tree for feneme AX_2:
+node   0: quest-P  17[-1] --> true: node   1, false: node   2
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   1: quest-P  27[-1] --> true: node   6, false: node   7
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   2: quest-P  24[-1] --> true: node   5, false: node   3
+  quest: DH V
+node   3: quest-P  40[-1] --> true: node   8, false: node   4
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   4: quest-P  23[+1] --> true: node   9, false: node  10
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   5: leaf   44
+node   6: leaf   45
+node   7: leaf   46
+node   8: leaf   47
+node   9: leaf   48
+node  10: leaf   49
+
+Tree for feneme AX_3:
+node   0: quest-P  40[+1] --> true: node   1, false: node   2
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: quest-P  89[+1] --> true: node   3, false: node   6
+  quest: N
+node   2: quest-P  27[+1] --> true: node   7, false: node   4
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   3: quest-P  17[-1] --> true: node   8, false: node   9
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   4: quest-P  57[-1] --> true: node  10, false: node   5
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   5: quest-P  27[-1] --> true: node  11, false: node  12
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   6: leaf   50
+node   7: leaf   51
+node   8: leaf   52
+node   9: leaf   53
+node  10: leaf   54
+node  11: leaf   55
+node  12: leaf   56
+
+Tree for feneme AXR_1:
+node   0: quest-P  45[-1] --> true: node   1, false: node   2
+  quest: K P T
+node   1: leaf   57
+node   2: leaf   58
+
+Tree for feneme AXR_2:
+node   0: quest-P  13[-1] --> true: node   1, false: node   2
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   1: quest-P  12[-1] --> true: node   3, false: node   4
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   2: quest-P  32[-1] --> true: node   5, false: node   6
+  quest: DX K P T
+node   3: leaf   59
+node   4: leaf   60
+node   5: leaf   61
+node   6: leaf   62
+
+Tree for feneme AXR_3:
+node   0: quest-P  54[+1] --> true: node   3, false: node   1
+  quest: S Z
+node   1: quest-P 110[+1] --> true: node   2, false: node   4
+  quest: |
+node   2: quest-P  17[-1] --> true: node   5, false: node   6
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   3: leaf   63
+node   4: leaf   64
+node   5: leaf   65
+node   6: leaf   66
+
+Tree for feneme AY_1:
+node   0: leaf   67
+
+Tree for feneme AY_2:
+node   0: quest-P   7[-1] --> true: node   2, false: node   1
+  quest: AXR ER L R W
+node   1: quest-P  13[-1] --> true: node   3, false: node   4
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   2: leaf   68
+node   3: leaf   69
+node   4: leaf   70
+
+Tree for feneme AY_3:
+node   0: quest-P  40[+1] --> true: node   3, false: node   1
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: quest-P  16[+1] --> true: node   4, false: node   2
+  quest: B BD CH D DD DH F G GD HH JH K KD M N NG P PD S SH TS Y
+node   2: quest-P  12[+1] --> true: node   5, false: node   6
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   3: leaf   71
+node   4: leaf   72
+node   5: leaf   73
+node   6: leaf   74
+
+Tree for feneme B_1:
+node   0: leaf   75
+
+Tree for feneme B_2:
+node   0: quest-P  57[+1] --> true: node   1, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   1: leaf   76
+node   2: leaf   77
+
+Tree for feneme B_3:
+node   0: quest-P  57[+1] --> true: node   1, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   1: leaf   78
+node   2: leaf   79
+
+Tree for feneme BD_1:
+node   0: leaf   80
+
+Tree for feneme BD_2:
+node   0: leaf   81
+
+Tree for feneme BD_3:
+node   0: leaf   82
+
+Tree for feneme CH_1:
+node   0: leaf   83
+
+Tree for feneme CH_2:
+node   0: leaf   84
+
+Tree for feneme CH_3:
+node   0: leaf   85
+
+Tree for feneme D_1:
+node   0: leaf   86
+
+Tree for feneme D_2:
+node   0: quest-P  12[+1] --> true: node   1, false: node   2
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   1: leaf   87
+node   2: leaf   88
+
+Tree for feneme D_3:
+node   0: quest-P  57[+1] --> true: node   1, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   1: leaf   89
+node   2: leaf   90
+
+Tree for feneme DD_1:
+node   0: quest-P  14[-1] --> true: node   1, false: node   2
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   1: leaf   91
+node   2: leaf   92
+
+Tree for feneme DD_2:
+node   0: quest-P  40[-1] --> true: node   1, false: node   2
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: leaf   93
+node   2: leaf   94
+
+Tree for feneme DD_3:
+node   0: quest-P   5[-1] --> true: node   2, false: node   1
+  quest: AH AO AX EY
+node   1: quest-P   1[-1] --> true: node   3, false: node   4
+  quest: AA AE EH IH IX UH
+node   2: leaf   95
+node   3: leaf   96
+node   4: leaf   97
+
+Tree for feneme DH_1:
+node   0: quest-P  64[+1] --> true: node   1, false: node   2
+  quest: AX
+node   1: leaf   98
+node   2: leaf   99
+
+Tree for feneme DH_2:
+node   0: leaf  100
+
+Tree for feneme DH_3:
+node   0: quest-P  64[+1] --> true: node   1, false: node   2
+  quest: AX
+node   1: leaf  101
+node   2: leaf  102
+
+Tree for feneme DX_1:
+node   0: leaf  103
+
+Tree for feneme DX_2:
+node   0: leaf  104
+
+Tree for feneme DX_3:
+node   0: leaf  105
+
+Tree for feneme EH_1:
+node   0: quest-P  17[-1] --> true: node   1, false: node   2
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   1: leaf  106
+node   2: leaf  107
+
+Tree for feneme EH_2:
+node   0: quest-P  58[-1] --> true: node   3, false: node   1
+  quest: S TS Z
+node   1: quest-P  40[-1] --> true: node   4, false: node   2
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   2: quest-P  40[+1] --> true: node   5, false: node   6
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   3: leaf  108
+node   4: leaf  109
+node   5: leaf  110
+node   6: leaf  111
+
+Tree for feneme EH_3:
+node   0: quest-P  37[+1] --> true: node   4, false: node   1
+  quest: CH F HH S SH TH TS
+node   1: quest-P  48[+1] --> true: node   5, false: node   2
+  quest: K KD P PD T TD
+node   2: quest-P  58[-1] --> true: node   6, false: node   3
+  quest: S TS Z
+node   3: quest-P  11[+1] --> true: node   7, false: node   8
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   4: leaf  112
+node   5: leaf  113
+node   6: leaf  114
+node   7: leaf  115
+node   8: leaf  116
+
+Tree for feneme ER_1:
+node   0: leaf  117
+
+Tree for feneme ER_2:
+node   0: leaf  118
+
+Tree for feneme ER_3:
+node   0: quest-P  13[-1] --> true: node   1, false: node   2
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   1: leaf  119
+node   2: leaf  120
+
+Tree for feneme EY_1:
+node   0: quest-P  46[-1] --> true: node   1, false: node   2
+  quest: B D G K P T
+node   1: leaf  121
+node   2: leaf  122
+
+Tree for feneme EY_2:
+node   0: quest-P   8[-1] --> true: node   2, false: node   1
+  quest: AXR ER L OW R UW W
+node   1: quest-P  14[+1] --> true: node   3, false: node   4
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   2: leaf  123
+node   3: leaf  124
+node   4: leaf  125
+
+Tree for feneme EY_3:
+node   0: quest-P  40[+1] --> true: node   4, false: node   1
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: quest-P  22[+1] --> true: node   5, false: node   2
+  quest: CH JH S SH TS Z ZH
+node   2: quest-P 110[-1] --> true: node   6, false: node   3
+  quest: |
+node   3: quest-P  33[+1] --> true: node   7, false: node   8
+  quest: DX K KD P PD T TD
+node   4: leaf  126
+node   5: leaf  127
+node   6: leaf  128
+node   7: leaf  129
+node   8: leaf  130
+
+Tree for feneme F_1:
+node   0: leaf  131
+
+Tree for feneme F_2:
+node   0: quest-P   0[+1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: leaf  132
+node   2: leaf  133
+
+Tree for feneme F_3:
+node   0: quest-P   6[+1] --> true: node   4, false: node   1
+  quest: AXR ER R
+node   1: quest-P  57[+1] --> true: node   5, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P   0[+1] --> true: node   3, false: node   6
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   3: quest-P  40[+1] --> true: node   7, false: node   8
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   4: leaf  134
+node   5: leaf  135
+node   6: leaf  136
+node   7: leaf  137
+node   8: leaf  138
+
+Tree for feneme G_1:
+node   0: leaf  139
+
+Tree for feneme G_2:
+node   0: leaf  140
+
+Tree for feneme G_3:
+node   0: leaf  141
+
+Tree for feneme GD_1:
+node   0: leaf  142
+
+Tree for feneme GD_2:
+node   0: leaf  143
+
+Tree for feneme GD_3:
+node   0: leaf  144
+
+Tree for feneme HH_1:
+node   0: leaf  145
+
+Tree for feneme HH_2:
+node   0: leaf  146
+
+Tree for feneme HH_3:
+node   0: quest-P  57[+1] --> true: node   1, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   1: leaf  147
+node   2: leaf  148
+
+Tree for feneme IH_1:
+node   0: leaf  149
+
+Tree for feneme IH_2:
+node   0: quest-P  93[-1] --> true: node   2, false: node   1
+  quest: P
+node   1: quest-P  40[+1] --> true: node   3, false: node   4
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   2: leaf  150
+node   3: leaf  151
+node   4: leaf  152
+
+Tree for feneme IH_3:
+node   0: quest-P   8[+1] --> true: node   3, false: node   1
+  quest: AXR ER L OW R UW W
+node   1: quest-P  15[+1] --> true: node   2, false: node   4
+  quest: AX AXR B BD D DD DH DX ER EY F G GD HH IH IX K KD M N NG P PD R T
+    TD TH V
+node   2: quest-P  17[+1] --> true: node   5, false: node   6
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   3: leaf  153
+node   4: leaf  154
+node   5: leaf  155
+node   6: leaf  156
+
+Tree for feneme IX_1:
+node   0: quest-P  11[-1] --> true: node   2, false: node   1
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   1: quest-P 110[-1] --> true: node   3, false: node   4
+  quest: |
+node   2: leaf  157
+node   3: leaf  158
+node   4: leaf  159
+
+Tree for feneme IX_2:
+node   0: quest-P  40[-1] --> true: node   3, false: node   1
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: quest-P  11[-1] --> true: node   4, false: node   2
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   2: quest-P  10[+1] --> true: node   5, false: node   6
+  quest: AE AO AX AXR B BD DD DX EH ER G GD IH IX K KD L M OW OY P PD S T TD
+    TS X Z
+node   3: leaf  160
+node   4: leaf  161
+node   5: leaf  162
+node   6: leaf  163
+
+Tree for feneme IX_3:
+node   0: quest-P  54[+1] --> true: node   4, false: node   1
+  quest: S Z
+node   1: quest-P  43[+1] --> true: node   5, false: node   2
+  quest: M N NG
+node   2: quest-P  52[+1] --> true: node   6, false: node   3
+  quest: BD DD GD KD PD TD
+node   3: quest-P  27[+1] --> true: node   7, false: node   8
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   4: leaf  164
+node   5: leaf  165
+node   6: leaf  166
+node   7: leaf  167
+node   8: leaf  168
+
+Tree for feneme IY_1:
+node   0: quest-P   6[-1] --> true: node   2, false: node   1
+  quest: AXR ER R
+node   1: quest-P  15[-1] --> true: node   3, false: node   4
+  quest: AX AXR B BD D DD DH DX ER EY F G GD HH IH IX K KD M N NG P PD R T
+    TD TH V
+node   2: leaf  169
+node   3: leaf  170
+node   4: leaf  171
+
+Tree for feneme IY_2:
+node   0: quest-P   8[-1] --> true: node   1, false: node   2
+  quest: AXR ER L OW R UW W
+node   1: quest-P   6[-1] --> true: node   5, false: node   6
+  quest: AXR ER R
+node   2: quest-P  17[-1] --> true: node   3, false: node   4
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   3: quest-P  13[-1] --> true: node   7, false: node   8
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   4: quest-P 110[+1] --> true: node   9, false: node  10
+  quest: |
+node   5: leaf  172
+node   6: leaf  173
+node   7: leaf  174
+node   8: leaf  175
+node   9: leaf  176
+node  10: leaf  177
+
+Tree for feneme IY_3:
+node   0: quest-P   8[-1] --> true: node   1, false: node   2
+  quest: AXR ER L OW R UW W
+node   1: quest-P  41[-1] --> true: node   9, false: node  10
+  quest: L W
+node   2: quest-P  43[-1] --> true: node   7, false: node   3
+  quest: M N NG
+node   3: quest-P  23[+1] --> true: node   8, false: node   4
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   4: quest-P  12[+1] --> true: node  11, false: node   5
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   5: quest-P  29[-1] --> true: node  12, false: node   6
+  quest: B D DX G
+node   6: quest-P  27[-1] --> true: node  13, false: node  14
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   7: leaf  178
+node   8: leaf  179
+node   9: leaf  180
+node  10: leaf  181
+node  11: leaf  182
+node  12: leaf  183
+node  13: leaf  184
+node  14: leaf  185
+
+Tree for feneme JH_1:
+node   0: leaf  186
+
+Tree for feneme JH_2:
+node   0: leaf  187
+
+Tree for feneme JH_3:
+node   0: leaf  188
+
+Tree for feneme K_1:
+node   0: quest-P 110[-1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  189
+node   2: leaf  190
+
+Tree for feneme K_2:
+node   0: quest-P 110[-1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  191
+node   2: leaf  192
+
+Tree for feneme K_3:
+node   0: quest-P  22[+1] --> true: node   3, false: node   1
+  quest: CH JH S SH TS Z ZH
+node   1: quest-P   8[+1] --> true: node   4, false: node   2
+  quest: AXR ER L OW R UW W
+node   2: quest-P  23[+1] --> true: node   5, false: node   6
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   3: leaf  193
+node   4: leaf  194
+node   5: leaf  195
+node   6: leaf  196
+
+Tree for feneme KD_1:
+node   0: leaf  197
+
+Tree for feneme KD_2:
+node   0: leaf  198
+
+Tree for feneme KD_3:
+node   0: leaf  199
+
+Tree for feneme L_1:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  57[-1] --> true: node   5, false: node   6
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P  11[-1] --> true: node   3, false: node   4
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: leaf  200
+node   4: leaf  201
+node   5: leaf  202
+node   6: leaf  203
+
+Tree for feneme L_2:
+node   0: quest-P   0[+1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  57[+1] --> true: node   7, false: node   8
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P  62[-1] --> true: node   5, false: node   3
+  quest: AO
+node   3: quest-P  42[-1] --> true: node   6, false: node   4
+  quest: L OW UW W
+node   4: quest-P   0[-1] --> true: node   9, false: node  10
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   5: leaf  204
+node   6: leaf  205
+node   7: leaf  206
+node   8: leaf  207
+node   9: leaf  208
+node  10: leaf  209
+
+Tree for feneme L_3:
+node   0: quest-P   0[+1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  11[+1] --> true: node   6, false: node   3
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   2: quest-P   9[+1] --> true: node   5, false: node   4
+  quest: AX AXR IX
+node   3: quest-P  57[+1] --> true: node   7, false: node   8
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   4: quest-P  14[+1] --> true: node   9, false: node  10
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   5: leaf  210
+node   6: leaf  211
+node   7: leaf  212
+node   8: leaf  213
+node   9: leaf  214
+node  10: leaf  215
+
+Tree for feneme M_1:
+node   0: quest-P  62[-1] --> true: node   2, false: node   1
+  quest: AO
+node   1: quest-P   0[+1] --> true: node   3, false: node   4
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   2: leaf  216
+node   3: leaf  217
+node   4: leaf  218
+
+Tree for feneme M_2:
+node   0: quest-P  62[-1] --> true: node   2, false: node   1
+  quest: AO
+node   1: quest-P   0[+1] --> true: node   3, false: node   4
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   2: leaf  219
+node   3: leaf  220
+node   4: leaf  221
+
+Tree for feneme M_3:
+node   0: quest-P   0[+1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  57[+1] --> true: node   3, false: node   5
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P   9[+1] --> true: node   6, false: node   4
+  quest: AX AXR IX
+node   3: quest-P   3[+1] --> true: node   9, false: node  10
+  quest: AE EH EY
+node   4: quest-P  11[+1] --> true: node   7, false: node   8
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   5: leaf  222
+node   6: leaf  223
+node   7: leaf  224
+node   8: leaf  225
+node   9: leaf  226
+node  10: leaf  227
+
+Tree for feneme N_1:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  57[-1] --> true: node   3, false: node   5
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P   5[-1] --> true: node   4, false: node   6
+  quest: AH AO AX EY
+node   3: quest-P  12[-1] --> true: node   9, false: node  10
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   4: quest-P  23[+1] --> true: node   7, false: node   8
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   5: leaf  228
+node   6: leaf  229
+node   7: leaf  230
+node   8: leaf  231
+node   9: leaf  232
+node  10: leaf  233
+
+Tree for feneme N_2:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  57[-1] --> true: node   3, false: node   4
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P   0[+1] --> true: node   7, false: node   5
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   3: quest-P  14[+1] --> true: node  10, false: node  11
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   4: quest-P   5[-1] --> true: node   8, false: node   9
+  quest: AH AO AX EY
+node   5: quest-P  52[+1] --> true: node  12, false: node   6
+  quest: BD DD GD KD PD TD
+node   6: quest-P 110[+1] --> true: node  13, false: node  14
+  quest: |
+node   7: leaf  234
+node   8: leaf  235
+node   9: leaf  236
+node  10: leaf  237
+node  11: leaf  238
+node  12: leaf  239
+node  13: leaf  240
+node  14: leaf  241
+
+Tree for feneme N_3:
+node   0: quest-P  22[+1] --> true: node   1, false: node   2
+  quest: CH JH S SH TS Z ZH
+node   1: quest-P  37[+1] --> true: node  10, false: node  11
+  quest: CH F HH S SH TH TS
+node   2: quest-P   0[+1] --> true: node   3, false: node   4
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   3: quest-P  40[+1] --> true: node  15, false: node  16
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   4: quest-P 110[+1] --> true: node   5, false: node   6
+  quest: |
+node   5: quest-P  15[-1] --> true: node   7, false: node  14
+  quest: AX AXR B BD D DD DH DX ER EY F G GD HH IH IX K KD M N NG P PD R T
+    TD TH V
+node   6: quest-P  49[+1] --> true: node   9, false: node   8
+  quest: K KD P PD T TD X
+node   7: quest-P   1[-1] --> true: node  17, false: node  18
+  quest: AA AE EH IH IX UH
+node   8: quest-P  19[+1] --> true: node  12, false: node  13
+  quest: B BD D DD G GD
+node   9: leaf  242
+node  10: leaf  243
+node  11: leaf  244
+node  12: leaf  245
+node  13: leaf  246
+node  14: leaf  247
+node  15: leaf  248
+node  16: leaf  249
+node  17: leaf  250
+node  18: leaf  251
+
+Tree for feneme NG_1:
+node   0: leaf  252
+
+Tree for feneme NG_2:
+node   0: leaf  253
+
+Tree for feneme NG_3:
+node   0: leaf  254
+
+Tree for feneme OW_1:
+node   0: leaf  255
+
+Tree for feneme OW_2:
+node   0: quest-P  40[-1] --> true: node   1, false: node   2
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   1: leaf  256
+node   2: leaf  257
+
+Tree for feneme OW_3:
+node   0: quest-P  27[+1] --> true: node   2, false: node   1
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   1: quest-P   7[-1] --> true: node   3, false: node   4
+  quest: AXR ER L R W
+node   2: leaf  258
+node   3: leaf  259
+node   4: leaf  260
+
+Tree for feneme OY_1:
+node   0: leaf  261
+
+Tree for feneme OY_2:
+node   0: leaf  262
+
+Tree for feneme OY_3:
+node   0: leaf  263
+
+Tree for feneme P_1:
+node   0: quest-P   0[+1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: leaf  264
+node   2: leaf  265
+
+Tree for feneme P_2:
+node   0: quest-P 110[-1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  266
+node   2: leaf  267
+
+Tree for feneme P_3:
+node   0: quest-P  81[+1] --> true: node   4, false: node   1
+  quest: IH
+node   1: quest-P  57[+1] --> true: node   5, false: node   2
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: quest-P   6[+1] --> true: node   6, false: node   3
+  quest: AXR ER R
+node   3: quest-P 110[-1] --> true: node   7, false: node   8
+  quest: |
+node   4: leaf  268
+node   5: leaf  269
+node   6: leaf  270
+node   7: leaf  271
+node   8: leaf  272
+
+Tree for feneme PD_1:
+node   0: leaf  273
+
+Tree for feneme PD_2:
+node   0: leaf  274
+
+Tree for feneme PD_3:
+node   0: leaf  275
+
+Tree for feneme R_1:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  23[-1] --> true: node   3, false: node   4
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   2: quest-P  16[-1] --> true: node   5, false: node   6
+  quest: B BD CH D DD DH F G GD HH JH K KD M N NG P PD S SH TS Y
+node   3: leaf  276
+node   4: leaf  277
+node   5: leaf  278
+node   6: leaf  279
+
+Tree for feneme R_2:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P   4[-1] --> true: node   5, false: node   6
+  quest: AO OY
+node   2: quest-P  11[-1] --> true: node   3, false: node   4
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: quest-P  13[-1] --> true: node   7, false: node   8
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   4: leaf  280
+node   5: leaf  281
+node   6: leaf  282
+node   7: leaf  283
+node   8: leaf  284
+
+Tree for feneme R_3:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  39[+1] --> true: node   7, false: node   3
+  quest: IY Y
+node   2: quest-P  38[+1] --> true: node   8, false: node   4
+  quest: IH IX IY
+node   3: quest-P  23[-1] --> true: node   5, false: node   6
+  quest: AA AH AO D DD K L M N OY P PD T TD UH UW X
+node   4: quest-P   3[+1] --> true: node   9, false: node  10
+  quest: AE EH EY
+node   5: quest-P   2[-1] --> true: node  11, false: node  12
+  quest: AA AH AW AY OW UH UW
+node   6: quest-P  13[-1] --> true: node  13, false: node  14
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   7: leaf  285
+node   8: leaf  286
+node   9: leaf  287
+node  10: leaf  288
+node  11: leaf  289
+node  12: leaf  290
+node  13: leaf  291
+node  14: leaf  292
+
+Tree for feneme S_1:
+node   0: quest-P   0[-1] --> true: node   3, false: node   1
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  10[-1] --> true: node   4, false: node   2
+  quest: AE AO AX AXR B BD DD DX EH ER G GD IH IX K KD L M OW OY P PD S T TD
+    TS X Z
+node   2: quest-P  15[+1] --> true: node   5, false: node   6
+  quest: AX AXR B BD D DD DH DX ER EY F G GD HH IH IX K KD M N NG P PD R T
+    TD TH V
+node   3: leaf  293
+node   4: leaf  294
+node   5: leaf  295
+node   6: leaf  296
+
+Tree for feneme S_2:
+node   0: quest-P   0[-1] --> true: node   1, false: node   2
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  11[+1] --> true: node   8, false: node   9
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   2: quest-P  11[-1] --> true: node   6, false: node   3
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: quest-P 110[-1] --> true: node   4, false: node   7
+  quest: |
+node   4: quest-P  14[+1] --> true: node  10, false: node   5
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   5: quest-P  74[+1] --> true: node  11, false: node  12
+  quest: EH
+node   6: leaf  297
+node   7: leaf  298
+node   8: leaf  299
+node   9: leaf  300
+node  10: leaf  301
+node  11: leaf  302
+node  12: leaf  303
+
+Tree for feneme S_3:
+node   0: quest-P  47[+1] --> true: node   1, false: node   2
+  quest: B BD D DD G GD K KD P PD T TD
+node   1: quest-P  16[+1] --> true: node  12, false: node   3
+  quest: B BD CH D DD DH F G GD HH JH K KD M N NG P PD S SH TS Y
+node   2: quest-P   0[+1] --> true: node   4, false: node   5
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   3: quest-P   0[-1] --> true: node  15, false: node  16
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   4: quest-P  38[+1] --> true: node  11, false: node   6
+  quest: IH IX IY
+node   5: quest-P   9[+1] --> true: node  10, false: node   7
+  quest: AX AXR IX
+node   6: quest-P   3[+1] --> true: node  13, false: node   8
+  quest: AE EH EY
+node   7: quest-P  16[-1] --> true: node  14, false: node   9
+  quest: B BD CH D DD DH F G GD HH JH K KD M N NG P PD S SH TS Y
+node   8: quest-P   8[+1] --> true: node  17, false: node  18
+  quest: AXR ER L OW R UW W
+node   9: quest-P  57[-1] --> true: node  19, false: node  20
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node  10: leaf  304
+node  11: leaf  305
+node  12: leaf  306
+node  13: leaf  307
+node  14: leaf  308
+node  15: leaf  309
+node  16: leaf  310
+node  17: leaf  311
+node  18: leaf  312
+node  19: leaf  313
+node  20: leaf  314
+
+Tree for feneme SH_1:
+node   0: leaf  315
+
+Tree for feneme SH_2:
+node   0: leaf  316
+
+Tree for feneme SH_3:
+node   0: quest-P   0[+1] --> true: node   2, false: node   1
+  quest: AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW
+node   1: quest-P  13[-1] --> true: node   3, false: node   4
+  quest: AH AO AY B BD CH DH ER EY F IH IX IY NG OW OY P PD SH TH V W X Z
+node   2: leaf  317
+node   3: leaf  318
+node   4: leaf  319
+
+Tree for feneme T_1:
+node   0: quest-P  17[-1] --> true: node   1, false: node   2
+  quest: B BD CH F G GD HH IX JH K KD OW S SH T TD TS UH V Z ZH
+node   1: leaf  320
+node   2: leaf  321
+
+Tree for feneme T_2:
+node   0: quest-P  27[-1] --> true: node   2, false: node   1
+  quest: CH DH F HH JH S SH TH TS V Z ZH
+node   1: quest-P 110[-1] --> true: node   3, false: node   4
+  quest: |
+node   2: leaf  322
+node   3: leaf  323
+node   4: leaf  324
+
+Tree for feneme T_3:
+node   0: quest-P  58[-1] --> true: node   4, false: node   1
+  quest: S TS Z
+node   1: quest-P   6[+1] --> true: node   5, false: node   2
+  quest: AXR ER R
+node   2: quest-P  14[+1] --> true: node   6, false: node   3
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   3: quest-P  38[+1] --> true: node   7, false: node   8
+  quest: IH IX IY
+node   4: leaf  325
+node   5: leaf  326
+node   6: leaf  327
+node   7: leaf  328
+node   8: leaf  329
+
+Tree for feneme TD_1:
+node   0: quest-P  14[-1] --> true: node   1, false: node   2
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   1: leaf  330
+node   2: leaf  331
+
+Tree for feneme TD_2:
+node   0: quest-P  16[-1] --> true: node   1, false: node   2
+  quest: B BD CH D DD DH F G GD HH JH K KD M N NG P PD S SH TS Y
+node   1: leaf  332
+node   2: leaf  333
+
+Tree for feneme TD_3:
+node   0: quest-P  11[-1] --> true: node   2, false: node   1
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   1: quest-P  57[-1] --> true: node   3, false: node   4
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   2: leaf  334
+node   3: leaf  335
+node   4: leaf  336
+
+Tree for feneme TH_1:
+node   0: leaf  337
+
+Tree for feneme TH_2:
+node   0: leaf  338
+
+Tree for feneme TH_3:
+node   0: leaf  339
+
+Tree for feneme TS_1:
+node   0: leaf  340
+
+Tree for feneme TS_2:
+node   0: leaf  341
+
+Tree for feneme TS_3:
+node   0: leaf  342
+
+Tree for feneme UH_1:
+node   0: leaf  343
+
+Tree for feneme UH_2:
+node   0: leaf  344
+
+Tree for feneme UH_3:
+node   0: leaf  345
+
+Tree for feneme UW_1:
+node   0: leaf  346
+
+Tree for feneme UW_2:
+node   0: leaf  347
+
+Tree for feneme UW_3:
+node   0: quest-P  11[+1] --> true: node   1, false: node   2
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   1: leaf  348
+node   2: leaf  349
+
+Tree for feneme V_1:
+node   0: leaf  350
+
+Tree for feneme V_2:
+node   0: quest-P 110[+1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  351
+node   2: leaf  352
+
+Tree for feneme V_3:
+node   0: quest-P 110[+1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  353
+node   2: leaf  354
+
+Tree for feneme W_1:
+node   0: leaf  355
+
+Tree for feneme W_2:
+node   0: quest-P  85[-1] --> true: node   1, false: node   2
+  quest: K
+node   1: leaf  356
+node   2: leaf  357
+
+Tree for feneme W_3:
+node   0: quest-P  57[+1] --> true: node   2, false: node   1
+  quest: AE EH EY IH IX IY T TD TH V Z ZH
+node   1: quest-P  40[+1] --> true: node   3, false: node   4
+  quest: AO AXR ER IY L M N NG OW OY R UH UW W Y
+node   2: leaf  358
+node   3: leaf  359
+node   4: leaf  360
+
+Tree for feneme X_1:
+node   0: leaf  361
+
+Tree for feneme X_2:
+node   0: leaf  362
+
+Tree for feneme X_3:
+node   0: leaf  363
+
+Tree for feneme Y_1:
+node   0: leaf  364
+
+Tree for feneme Y_2:
+node   0: leaf  365
+
+Tree for feneme Y_3:
+node   0: quest-P 110[-1] --> true: node   1, false: node   2
+  quest: |
+node   1: leaf  366
+node   2: leaf  367
+
+Tree for feneme Z_1:
+node   0: quest-P  14[-1] --> true: node   2, false: node   1
+  quest: AX AXR B BD CH D DD DH DX ER F G GD HH JH K KD M N NG P PD R S SH T
+    TD TH TS UW V W X Z ZH
+node   1: quest-P  38[-1] --> true: node   3, false: node   4
+  quest: IH IX IY
+node   2: leaf  368
+node   3: leaf  369
+node   4: leaf  370
+
+Tree for feneme Z_2:
+node   0: quest-P  11[-1] --> true: node   3, false: node   1
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   1: quest-P   8[-1] --> true: node   4, false: node   2
+  quest: AXR ER L OW R UW W
+node   2: quest-P  15[-1] --> true: node   5, false: node   6
+  quest: AX AXR B BD D DD DH DX ER EY F G GD HH IH IX K KD M N NG P PD R T
+    TD TH V
+node   3: leaf  371
+node   4: leaf  372
+node   5: leaf  373
+node   6: leaf  374
+
+Tree for feneme Z_3:
+node   0: quest-P   6[-1] --> true: node   7, false: node   1
+  quest: AXR ER R
+node   1: quest-P 110[+1] --> true: node   2, false: node   8
+  quest: |
+node   2: quest-P  11[-1] --> true: node   3, false: node   4
+  quest: B BD CH D DD DH F G GD IY JH K KD M N NG P PD S SH T TD TH TS V X Y
+    Z ZH
+node   3: quest-P  12[-1] --> true: node   5, false: node  10
+  quest: AO AW AX AY B BD D DD DH EH EY IH K KD M N S TS UH V W Z
+node   4: quest-P   8[-1] --> true: node   9, false: node   6
+  quest: AXR ER L OW R UW W
+node   5: quest-P  89[-1] --> true: node  11, false: node  12
+  quest: N
+node   6: quest-P   1[-1] --> true: node  13, false: node  14
+  quest: AA AE EH IH IX UH
+node   7: leaf  375
+node   8: leaf  376
+node   9: leaf  377
+node  10: leaf  378
+node  11: leaf  379
+node  12: leaf  380
+node  13: leaf  381
+node  14: leaf  382
+
+Tree for feneme ZH_1:
+node   0: leaf  383
+
+Tree for feneme ZH_2:
+node   0: leaf  384
+
+Tree for feneme ZH_3:
+node   0: leaf  385
+

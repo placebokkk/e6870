@@ -1,0 +1,238 @@
+
+务必认真做完此文件中的作业。part1全部答案，part2部分答案已给出，可以先不看答案自己做。
+
+########################################################################
+#   Lab 4 -- Large Vocabulary Decoding: A Love Story
+#   EECS E6870: Speech Recognition
+#   Due: Friday, May 1, 2019 at 6:00pm
+########################################################################
+
+* Name: 
+
+
+########################################################################
+#   Part 1 - lab4_p1a
+########################################################################
+We use openfst toolkit for this expriments,
+please download and install it here:
+http://www.openfst.org/twiki/bin/view/FST/FstDownload
+
+* Create a single FSA "p1a.fsm" that represents the strings "I LIKE BEARS"
+  and "BEARS I LIKE".  Turn this into an FST by running the command
+
+    fstcompile --isymbols=wd.isyms --osymbols=wd.isyms --keep_isymbols --keep_osymbols --acceptor p1a.fsm p1a.fst
+
+  List "p1a.fsm" below.
+
+->(Answer)
+
+
+
+* Create an FST "p1b.fst" with a single state that rewrites all word sequences
+  (containing only the words I, LIKE, and BEARS) to themselves except
+  that the word "LIKE" is changed to "LOVE".  List "p1b.fst" below.
+
+    fstcompile --isymbols=wd.isyms --osymbols=wd.isyms --keep_isymbols --keep_osymbols p1b.fsm p1b.fst
+
+->(Answer)
+
+
+
+* Compose the FST "p1a.fst" and the FST "p1b.fst" via the command
+
+    fstcompose p1a.fst p1b.fst p1c.fst
+      
+  and look at the resulting FSM "p1c.fst".  While we did not cover
+  FST/FST composition in class, can you describe how FST/FST composition
+  behaves?  If it helps, you can create more example FSM's for yourself and
+  use "FsmOp" to see how things behave.
+
+->(Answer)
+
+
+* Look at the provided FSM "p1d.fsm".  Using only your FSM "p1a.fsm",
+  the provided FSM "p1d.fsm", and "openfst" tool, create an FSM that
+  represents all three-word strings (containing only the words I, LIKE,
+  and BEARS) *except* for the strings "I LIKE BEARS" and "BEARS I LIKE".
+  (This should include three-word strings with repeated words, e.g., "I I I".)
+  You will need to use the operations "fstconcat", "fstdeterminize",
+  and "fstdifference" in "openfst".  Run "fst<op> --help" 
+  to get a little help on these commands.  To find out more
+  about what these commands do, just make sample FSM's and run "fst<op>"
+  on them.  NOTE: for the "fstdifference" operation to work correctly, the
+  input FSM's must be determinized.  Put the resulting FSM in "p1e.fst".
+  To check whether this FSM is correct, use 'fstdraw" to draw it.
+  List the commands you executed to create "p1e.fst" (you need
+  not submit any files for Part 1):
+
+->(Answer)
+
+
+
+########################################################################
+#   Part 2
+########################################################################
+* Read the lab4.pdf part 2 carefully!
+  Given 'wd.fsm' 'wd2lx.fsm' 'lx2pn.fsm' 'pn2md.fsm' 'md2hmm.fsm', 
+  build the final expanded fst graph, which converts hmm-state sequences
+  to word sequences. 
+
+->(Answer)
+  The answer using openfst is in lab4_p2a.sh. make sure you under stand it well. 
+  especially the pn2md and md2hmm part. You could check the drawn fst ps file to
+  get a better view and understanding.
+
+* Edit the FSM's "wd2lx.fsm" and "lx2pn.fsm" so that they can
+  handle an additional word in the vocabulary: BRITNEY,
+  with a single pronunciation variant:
+
+      BRITNEY(01)    | B R IH TD N IY
+
+  To test them, expand the word FSM "wd3.fsm" containing the
+  string "I LIKE BRITNEY" to the phone level using these transducers.
+->(Answer)
+   The script is already in lab4_p2b.sh, please change the wd2lx.fsm and lx2pn.fsm.
+
+* On slide 59 of lecture 9, we present an FST that can optionally
+  insert any number of silences between words (over the vocabulary
+  {A, B, C}).  Can you make an FST "addsil.fsm" that will optionally insert
+  at most one silence between words (and at the beginning and end of
+  an utterance), for the vocabulary {I, LIKE, BRITNEY}?
+  To test this, compose this with "wd3.fsm" to create the file "wd3sil.fsm".
+  You can look at "wd3sil.target.fsm" to see what the
+  target "wd3sil.fsm" looks like.  (Note that it's possible to create
+  equivalent FSM's that look quite different; e.g., if you renumber the
+  states in an FSM, the FSM will still have the same semantics.)
+->(Answer)
+  提示：slide 59里的fst每个word之间可以插入人一个silence，而这里要求插入至多一个（0个或1个）
+  The script is already in lab4_p2c.sh, please create your 'addsil.fsm'.
+
+* Examine the file "tree.txt".  What
+  type of decision-tree is this, i.e., triphone, quinphone, etc.?
+->
+
+
+
+* For the phone IH in BRITNEY, manually compute which
+  leaves correspond to each of its three states by
+  examining the corresponding decision trees in "tree.txt".
+
+->
+(参考答案)
+IH_1: 149
+IH_2: 152
+IH_3: 155
+
+
+* In the file "small_lm.fsm", identify the index of the state
+  corresponding to the unigram backoff state, i.e., the state corresponding
+  to the one labeled with "epsilon" on slide 86 of lecture 9.
+  (Hint: there is exactly one such state in the whole graph.):
+
+->
+
+
+* In the file "small_graph.fsm", will there also be a unique
+  unigram backoff state?  Why or why not?
+
+->
+
+* If we run determinization on "small_lm.fsm", we will run out of memory
+  because the resulting FSM is very, very large.  Can you explain
+  why this happens?  (Hint: The key is in the <epsilon> backoff arcs.
+  What will a typical state set in determinization look like, and
+  what will be its outgoing arcs.
+  Hint: Will the number of states increase a lot,
+  the number of arcs increase a lot, or both?)
+  (This is one reason why LVCSR decoders need to handle skip arcs,
+  because trying to optimize these out will make graphs much larger.)
+
+->
+The backoff state will make the determinization have a lot of trigrams, 
+which will increase the number of both states and arcs a lot. 
+This will largely increase the memory cost.
+
+########################################################################
+#   Part 3
+########################################################################
+
+* Instead of using a heap to iterate through active states in order at
+  each frame, another idea is to sort all active cells in "curFrame" by
+  state number at the beginning of processing each frame.  Why does sorting
+  all of the cells beforehand not completely address the handling of skip arcs?
+
+->
+All skip arcs go from lower-numbered states to higher-numbered states. 
+When using a heap, the method get_next_state() does 
+iterate through states in increasing order, 
+keeps track of all cells not yet iterated through and always 
+returns the cell corresponding to the lowest-numbered state 
+(we have to be able to handle new cells being inserted into 
+the current frame as we are looping through the cells in the current frame). 
+But when sorting active cells, we can only go to the next cell, 
+which may not be the lowest-numbered state. Also, we have to take newly 
+inserted cells into consideration while looping through the cells. 
+Thus may not completely address the handling of skip arcs.
+
+
+
+########################################################################
+#   Part 4
+########################################################################
+
+* The Viterbi algorithm attempts to identify the most likely complete path
+  through an HMM given some data.  When using pruning, it is possible
+  that no complete paths are found at all.  Describe how to detect
+  when this has happened.  When not using pruning, is it also possible
+  that no complete paths are found?  Why or why not?
+
+->
+When using pruning, we compute the threshold by taking the highest log probability of any cell at that frame and subtracting the beam width. Before processing the outgoing arcs of a state in the main loop, we first check whether its log probability is above the threshold. If in this frame, we have all cur.Cell.get_log_prob() < threshold, i.e., we have only the cell with highest log probability, then all states in this frame is skipped thus no complete path will be found. We can detect it by adding a sign in the while loop. If any state is processed, we set the sign to be 1, and if all states are skipped, we keep it to be 0. When entering the next loop, if sign is 0, we know that all states in the last frame is skipped. When not using pruning, it is not possible that no complete paths are found since we go through all states, expect that the graph itself is wrong.
+
+
+Describe what algorithm you used to find the rank pruning
+  threshold:
+
+->
+I set the threshold to be the log prob of the cell int he current frame with the k-th highest log prob. To do this, I use a vector to record all the log prob of the cell and return k-th (beamStateCnt-th) highest after sorting the vector. By adding the loop, I can get the k-th highest log prob and when pruning, I change the if sentence to be if (curCell.get_log_prob() < threshold || curCell.get_log_prob() < highestProb) continue; to implement rank pruning.
+
+
+########################################################################
+#   Part 5
+########################################################################
+
+* What word-error rates and real-time factors did you find for the
+  following conditions?
+  (Examine the file "p5.out" to extract this information.)
+
+->
+WSJ decoding, beam = 3: 28.12%
+WSJ decoding, beam = 5: 15.10%
+WSJ decoding, beam = 10: 15.10%
+
+WSJ decoding, 3k voc, small LM, beam = 7: 15.10%
+WSJ decoding, 21k voc, small LM, beam = 7: 16.15%
+WSJ decoding, 21k voc, large LM, beam = 7: 12.50%
+
+
+* What fraction of the time was spend on front end vs. GMM probs vs.
+  Viterbi search for the following conditions?
+  (Examine the file "p5.out" to extract this information.)
+
+->
+isolated digit decoding: 42.3% front end; 56.3% GMM; 0.0% search
+WSJ decoding, 21k voc, large LM, beam = 7: 0.0% front end; 27.0% GMM; 73.0% search
+
+
+* What did you learn in this part?
+
+->
+As the number of beams increases, the word-error rates decreases. For this lab, when beam is larger than 5, the word-error rate converges. Second, using large size LM instead of small lM also make word-error rates decreases while increasing vocabulary size may slightly increase word-error rates. Third, isolated digit decoding spends more time on front end and GMM while WSJ decoding spend more time on Viterbi search and front end.
+
+
+
+########################################################################
+#
+########################################################################
+
+
